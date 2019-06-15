@@ -1,6 +1,7 @@
-# Operation Research Final Project
-Operations research (OR) is a discipline that deals with the application of advanced analytical methods to help make better decisions.
+Operation Research Final Project
 ===
+
+Operations research (OR) is a discipline that deals with the application of advanced analytical methods to help make better decisions.
 
 
 ## Group members
@@ -33,7 +34,8 @@ The sleeping problem
 ## Programming
 
 ### Parameters
-$\begin{equation}\begin{split}
+$$
+\begin{split}
     &i \in \{1, \cdots, S(科目總數)\}\\
     &t \in \{1, \cdots, Days(總天數)\}\\
     &Days = \mbox{number of Days}\\
@@ -56,7 +58,7 @@ $\begin{equation}\begin{split}
                & = \overline{L}\cdot C_r- w_{L_t} \cdot C_r
      \end{split}
 \end{split}
-\end{equation}$
+$$
 
 
 ### Variables
