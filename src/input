@@ -1,0 +1,35 @@
+option solver "./minos";
+option display_round 1;
+option minos_options 'Major_iterations=100000\
+	Crash_option=1\
+	Minor_iterations=100000\
+	Superbasics_limit=100000'; 
+
+model final.mod;
+data final.dat;
+solve;
+
+display _L, _TU1, _TU2, _G, _Switching, _Setup;
+if MarginalUtility = 1 then printf "Use marginal utility\n";
+if GarbageTime = 1 then {
+	if CafeBoost = 1 then {
+		display L, sleep, _Subject, _Study, garbage, cup, cafe_record;
+		display study;
+	}
+	else {
+		display L, sleep, _Subject, _Study, garbage;
+		display study;
+	}
+}
+else {
+	if CafeBoost = 1 then {
+		display L, sleep, _Subject, _Study, cup, cafe_record;
+		display study;
+	}
+	else {
+		display L, sleep, _Subject, _Study;
+		display study;
+	}
+}
+
+

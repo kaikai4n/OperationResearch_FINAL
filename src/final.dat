@@ -1,0 +1,83 @@
+# data file
+
+# set 1 to have the feature, otherwise 0
+param SetupCost := 1;
+param SwitchingCost := 1;
+param MarginalUtility := 1;
+param GarbageTime := 1;
+param CafeBoost := 1;
+
+
+param S := 7;
+param T := 10;
+
+param beta_sleep := 7;
+param beta_study := 2;
+param beta_demand := 12;
+param beta_garbage := 1;
+param beta_cafe := 10;
+param beta_cafe_ret := 1.05;
+
+param C_alpha := 15;
+param C_weight_TU := 5;
+param C_weight_G := 0.5;
+param C_spirit := 80;
+param L_bar := 100;
+param L0 := 100;
+param C_r := 0.1;
+param C_switching := 0.0001;
+param C_setup := 2;
+
+param Credit :=
+1 3
+2 3
+3 3
+4 1
+5 3
+6 3
+7 3;
+
+param Hard :=
+1 1
+2 3
+3 1
+4 0
+5 2
+6 2
+7 2;
+
+param Tired :=
+1 3
+2 4
+3 1
+4 2
+5 3
+6 4
+7 4;
+
+param Subject:1 2 3 4 5 6 7 8 9 10 :=
+            1 3 0 0 0 0 3 0 0 0 0
+            2 0 0 3 0 0 0 0 3 0 0
+            3 0 0 0 0 3 0 0 0 0 3
+            4 0 0 0 0 1 0 0 0 0 1
+            5 3 0 0 0 0 3 0 0 0 0
+            6 0 0 0 3 0 0 0 0 3 0
+            7 0 0 0 0 3 0 0 0 0 3;
+
+param C_study:1 2 3 4 5 6 7 8 9 10 :=
+            1 1 1 1 1 1 0 0 0 0 0
+            2 0 0 0 0 0 0 0 0 0 0
+            3 0 0 0 0 0 0 0 0 0 0
+            4 0 0 0 0 0 0 0 0 0 0
+            5 1 1 1 1 1 0 0 0 0 0
+            6 1 1 1 1 1 1 1 1 0 0
+            7 1 1 1 1 1 1 1 1 1 0;
+
+param C_test: 1 2 3 4 5 6 7 8 9 10 :=
+            1 0 0 0 0 0 1 0 0 0 0
+            2 0 0 0 0 0 0 0 0 0 0
+            3 0 0 0 0 0 0 0 0 0 0
+            4 0 0 0 0 0 0 0 0 0 0
+            5 0 0 0 0 0 1 0 0 0 0
+            6 0 0 0 0 0 0 0 0 1 0
+            7 0 0 0 0 0 0 0 0 0 1;
