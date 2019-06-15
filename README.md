@@ -20,6 +20,12 @@ The sleeping problem
 ./ampl < src/input
 ```
 * Note that in data file, one can set line 4-8 options from 1 to 0 to specify which features to close. 
-
+```=4
+param SetupCost := 1;
+param SwitchingCost := 1;
+param MarginalUtility := 1;
+param GarbageTime := 1;
+param CafeBoost := 1;
+```
 
 See more in Report.pdf
